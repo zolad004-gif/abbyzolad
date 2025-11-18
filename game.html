@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Memory Game | Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container nav">
+        <a class="brand" href="index.html"><span class="brand-mark"></span><span>My Professional Site</span></a>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="hobbies.html">Hobbies</a>
+          <a href="discover.html">Discover</a>
+          <a href="resume.html">Resume</a>
+          <a href="career.html">Career</a>
+          <a href="game.html">Game</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section>
+        <h2 class="section-title">Dessert Memory Match</h2>
+        <p class="lead">Find all the matching dessert pairs. Built with JavaScript.</p>
+        
+        <div id="start-screen" style="text-align:center; padding:40px 20px;">
+          <button id="start-game" class="button" style="font-size:20px; padding:14px 28px;">Start Game</button>
+        </div>
+        
+        <div id="game-area" style="display:none;">
+          <div class="controls" style="margin: 8px 0 12px; display:flex; gap:14px; align-items:center;">
+            <button id="reset-game" class="button">Reset Game</button>
+            <span class="stat">Moves: <strong id="moves">0</strong></span>
+            <span class="stat">Matches: <strong id="matches">0</strong>/8</span>
+          </div>
+          <div class="game-board" aria-label="Memory game board"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container"><p>&copy; <span id="year"></span> Abby</p></div>
+    </footer>
+
+    <audio id="bg-music" loop>
+      <source src="media/roblox-minecraft-fortnite-video-game-music-358426.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="start-sound">
+      <source src="media/game-start-6104.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="bonus-sound">
+      <source src="media/game-bonus-02-294436.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="assets/js/main.js"></script>
+    <script src="script.js"></script>
+  </body>
+  </html>
